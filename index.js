@@ -9,9 +9,6 @@ function findMatching(drivers, args){
 return match;
 };
 
-function fuzzyMatch(drivers, args){
-  drivers.filter(function (driver){
-    debugger
-    return driver.slice(0,1) === args.slice(0,1);
-  });
+function fuzzyMatch(drivers, string) {
+  return drivers.filter(function (driver) { return driver.startsWith(string); });
 };

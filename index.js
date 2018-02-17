@@ -10,5 +10,5 @@ return match;
 };
 
 function fuzzyMatch(drivers, args){
-  drivers.filter(function (args){};)
+  drivers.filter(function (driver){ driver.slice(0,1) === args.slice(0,1)};)
 };

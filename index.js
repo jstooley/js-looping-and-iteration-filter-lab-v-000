@@ -1,7 +1,8 @@
 function findMatching(drivers, args){
   let match = []
   for (const driver of drivers){
-    if (driver.toUpperCase() === args.toUpperCase())[
+    const areEqual = (driver.toUpperCase() === args.toUpperCase())
+    if (areEqual)[
       match.push(args)
     ];
   };

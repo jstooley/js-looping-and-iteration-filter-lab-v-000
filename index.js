@@ -1,12 +1,5 @@
-function findMatching(drivers, args){
-  let match = []
-  for (const driver of drivers){
-    const areEqual = (driver.toUpperCase() === args.toUpperCase())
-    if (areEqual)[
-      match.push(driver)
-    ];
-  };
-return match;
+function findMatching(drivers, string) {
+  return drivers.filter(function (driver) { return driver.toUpperCase() ===  string.toUpperCase(); });
 };
 
 function fuzzyMatch(drivers, string) {
